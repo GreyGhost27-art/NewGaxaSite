@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gaxa Tech - The Brand Makers. Leading digital marketing agency specializing in custom web solutions, mobile app development, and SEO optimization. Trusted by 100+ clients.">
+    <title>Gaxa Tech | Digital Marketing & Web Development Services</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%2332a5e6'/><text x='50' y='60' text-anchor='middle' fill='white' font-family='Arial' font-size='30' font-weight='bold'>G</text></svg>">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-outline"></div>
+    </div>
+
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <img src="assets/images/Logo.png" alt="Gaxa Tech">
+            </div>
+            <div class="loader-progress">
+                <div class="loader-bar"></div>
+            </div>
+            <p class="loader-text">Loading Excellence...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="nav-brand magnetic">
+                <img src="assets/images/Logo.png" alt="Gaxa Tech" class="logo-img">
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link magnetic">Home</a></li>
+                <li><a href="#services" class="nav-link magnetic">Services</a></li>
+                <li><a href="#about" class="nav-link magnetic">About</a></li>
+                <li><a href="#testimonials" class="nav-link magnetic">Clients</a></li>
+                <li><a href="#contact" class="nav-link magnetic">Contact</a></li>
+            </ul>
+            <button class="theme-toggle magnetic" id="themeToggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="nav-toggle magnetic" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <canvas id="hero-canvas" class="hero-canvas"></canvas>
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-label" data-aos="fade-up">Digital Excellence</div>
+                <h1 class="hero-title">
+                    <span class="text-reveal">We Specialize In</span><br>
+                    <span class="text-reveal gradient-text">Digital Marketing</span>
+                </h1>
+                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                    Transform Your Brand with Innovative Web Solutions & Strategic Digital Marketing
+                </p>
+                <div class="hero-cta" data-aos="fade-up" data-aos-delay="400">
+                    <a href="#contact" class="btn btn-primary btn-large magnetic">
+                        <span>Get Started</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#services" class="btn btn-outline btn-large magnetic">
+                        <span>Our Services</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">What We Do</span>
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Comprehensive digital solutions to elevate your business</p>
+            </div>
+
+            <div class="bento-grid">
+                <!-- Service Card 1 -->
+                <div class="bento-card service-card" data-aos="fade-up" data-aos-delay="100" data-tilt>
+                    <div class="card-glow"></div>
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="service-title">Customized Web Solutions</h3>
+                    <p class="service-description">
+                        Build stunning, responsive websites tailored to your business needs with cutting-edge technology
+                    </p>
+                    <div class="service-tags">
+                        <span>React</span>
+                        <span>WordPress</span>
+                        <span>Node.js</span>
+                    </div>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bento-card service-card" data-aos="fade-up" data-aos-delay="200" data-tilt>
+                    <div class="card-glow"></div>
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="service-title">Mobile App Development</h3>
+                    <p class="service-description">
+                        Native and hybrid apps for iOS and Android with seamless integration and optimal performance
+                    </p>
+                    <div class="service-tags">
+                        <span>iOS</span>
+                        <span>Android</span>
+                        <span>Hybrid</span>
+                    </div>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bento-card service-card" data-aos="fade-up" data-aos-delay="300" data-tilt>
+                    <div class="card-glow"></div>
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="service-title">Digital Marketing</h3>
+                    <p class="service-description">
+                        Multichannel branding strategies to make your business viral and create better connections
+                    </p>
+                    <div class="service-tags">
+                        <span>Social Media</span>
+                        <span>Content</span>
+                        <span>PPC</span>
+                    </div>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bento-card service-card" data-aos="fade-up" data-aos-delay="400" data-tilt>
+                    <div class="card-glow"></div>
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="service-title">SEO Optimization</h3>
+                    <p class="service-description">
+                        Keyword research, competitive analysis, and content strategies to rank higher on search engines
+                    </p>
+                    <div class="service-tags">
+                        <span>On-Page</span>
+                        <span>Off-Page</span>
+                        <span>Technical</span>
+                    </div>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="bento-card service-card" data-aos="fade-up" data-aos-delay="500" data-tilt>
+                    <div class="card-glow"></div>
+                    <div class="service-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="service-title">Landing Page Optimization</h3>
+                    <p class="service-description">
+                        Convert visitors into customers with optimized landing pages and strategic copywriting
+                    </p>
+                    <div class="service-tags">
+                        <span>CRO</span>
+                        <span>A/B Testing</span>
+                        <span>Analytics</span>
+                    </div>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="bento-card service-card service-card-highlight" data-aos="fade-up" data-aos-delay="600" data-tilt>
+                    <div class="card-glow"></div>
+                    <div class="service-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3 class="service-title">No Hidden Fees</h3>
+                    <p class="service-description">
+                        Transparent pricing and full ownership - once it's built, it's 100% yours
+                    </p>
+                    <div class="service-tags">
+                        <span>Transparent</span>
+                        <span>Full Ownership</span>
+                        <span>Trust</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section" data-parallax>
+        <div class="stats-bg"></div>
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="stat-number" data-count="100">0</h3>
+                    <p class="stat-label">Happy Clients</p>
+                </div>
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="stat-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3 class="stat-number" data-count="250">0</h3>
+                    <p class="stat-label">Projects Completed</p>
+                </div>
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="stat-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3 class="stat-number" data-count="25">0</h3>
+                    <p class="stat-label">Team Members</p>
+                </div>
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3 class="stat-number" data-count="5">0</h3>
+                    <p class="stat-label">Years Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <span class="section-label">About Us</span>
+                    <h2 class="section-title">Powering Brands to New Heights</h2>
+                    <p class="about-description">
+                        At Gaxa Tech, we understand that a well-crafted website is the cornerstone of your online presence. Our innovative web solutions are designed to help you stand out in the digital landscape, captivate your audience, and drive meaningful results for your business.
+                    </p>
+                    <p class="about-description">
+                        Trusted by more than 100+ clients, our team delivers innovative web solutions, mobile apps, and marketing strategies that help you stand out in the digital landscape.
+                    </p>
+                    <ul class="tech-list">
+                        <li data-aos="fade-up" data-aos-delay="100">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Mobile-friendly responsive design</span>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay="200">
+                            <i class="fas fa-check-circle"></i>
+                            <span>WordPress, React, Node.js, Laravel</span>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay="300">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Full-stack development expertise</span>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay="400">
+                            <i class="fas fa-check-circle"></i>
+                            <span>SEO & digital marketing integration</span>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay="500">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Dedicated project management</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="about-visual" data-aos="fade-left">
+                    <div class="floating-card" data-float>
+                        <i class="fas fa-code"></i>
+                        <span>Clean Code</span>
+                    </div>
+                    <div class="floating-card" data-float data-float-delay="0.5">
+                        <i class="fas fa-bolt"></i>
+                        <span>Fast Performance</span>
+                    </div>
+                    <div class="floating-card" data-float data-float-delay="1">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Secure</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Client Success Stories</span>
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-subtitle">Building Stronger Digital Foundations</p>
+            </div>
+
+            <div class="testimonials-carousel" id="testimonialsCarousel">
+                <div class="testimonials-track">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card" data-tilt>
+                        <div class="card-glow"></div>
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            Gaxa tech is an exceptional team with an eye for detail. We got exactly what we wanted and more. The project management and communication were seamless, and the dedicated project manager did a fantastic job.
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <strong>MD Haarish</strong>
+                                <span>Haw-Tees</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card" data-tilt>
+                        <div class="card-glow"></div>
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            Gaxa tech helped us throughout the whole process of the launch of our website. They recreated our ideas exactly the way we wanted it. They had a regular follow up with us with the updates and changes.
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <strong>Sowbarnika</strong>
+                                <span>Linecornn</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card" data-tilt>
+                        <div class="card-glow"></div>
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            Gaxa Tech transformed our dealership's online presence with exceptional web design and digital marketing services. Their expertise and dedication have been vital to our success. Grateful for the partnership!
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <strong>Susee Group</strong>
+                                <span>Susee Group of Companies</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev magnetic" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="carousel-dots" id="carouselDots"></div>
+                    <button class="carousel-btn next magnetic" id="nextBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Get In Touch</span>
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-subtitle">Ready to transform your digital presence? Contact us today</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Card 1 -->
+                <div class="bento-card contact-card" data-aos="fade-up" data-aos-delay="100" data-tilt>
+                    <div class="card-glow"></div>
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <a href="tel:+918838399688" class="contact-link">+91 8838399688</a>
+                    <a href="tel:+917397687407" class="contact-link">+91 7397687407</a>
+                </div>
+
+                <!-- Contact Card 2 -->
+                <div class="bento-card contact-card" data-aos="fade-up" data-aos-delay="200" data-tilt>
+                    <div class="card-glow"></div>
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <a href="mailto:contact@gaxatech.com" class="contact-link">contact@gaxatech.com</a>
+                </div>
+
+                <!-- Contact Card 3 -->
+                <div class="bento-card contact-card" data-aos="fade-up" data-aos-delay="300" data-tilt>
+                    <div class="card-glow"></div>
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Bangalore Office</h3>
+                    <p>SY NO 15 EPIP Industrial Area Whitefield, Near Ginger Hotel, Bengaluru - 560066</p>
+                </div>
+
+                <!-- Contact Card 4 -->
+                <div class="bento-card contact-card" data-aos="fade-up" data-aos-delay="400" data-tilt>
+                    <div class="card-glow"></div>
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Coimbatore Office</h3>
+                    <p>417, Ramani's Sri Mayuri Layout, Coimbatore - 641049</p>
+                </div>
+
+                <!-- CTA Card -->
+                <div class="bento-card cta-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="cta-content">
+                        <h2>Ready to Transform Your Digital Presence?</h2>
+                        <p>Let's discuss how Gaxa Tech can help your business grow. Get in touch for a free consultation.</p>
+                        <div class="cta-buttons">
+                            <a href="tel:+918838399688" class="btn btn-primary btn-large magnetic">
+                                <i class="fas fa-phone"></i>
+                                <span>Contact Us</span>
+                            </a>
+                            <a href="#services" class="btn btn-outline btn-large magnetic">
+                                <i class="fas fa-briefcase"></i>
+                                <span>View Services</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">FAQs</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Find answers to common questions about our services</p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <button class="faq-question">
+                        <span>How long will it take to get a new website?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We can estimate the time frame based on the website design and development requirements that you have. Website features will differ based on the industries and business model.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <button class="faq-question">
+                        <span>What platforms do you use for web development?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We have around 25+ experts in the most familiar technologies like WordPress, Joomla, PHP, Laravel, Node, React, Python, HTML5, JavaScript, etc. Our experts will guide you to the best technology that will suit your requirements.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <button class="faq-question">
+                        <span>Can you create a mobile-friendly website?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. Nowadays, websites get accessed by mobile users a lot. It's increasing day by day. So creating a mobile-friendly website is the most important factor in website design & development.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                    <button class="faq-question">
+                        <span>How much does it cost for website development?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We charge a minimum cost for website development, but not cheaper because premium quality will not come under cheaper. Cost can be calculated based on the web development requirement that you have & technology that you choose.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
+                    <button class="faq-question">
+                        <span>Do you provide hosting for my website?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we provide hosting services & maintenance support along with our web development services.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
+                    <button class="faq-question">
+                        <span>Can you maintain my website?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, after we complete the web development process we provide website maintenance services as well.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/images/Logo.png" alt="Gaxa Tech" class="footer-logo">
+                    <p class="footer-tagline">The Brand Makers</p>
+                    <p class="footer-description">
+                        Building powerful digital experiences that drive results and transform businesses.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#testimonials">Our Clients</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">Web Development</a></li>
+                            <li><a href="#services">Mobile Apps</a></li>
+                            <li><a href="#services">Digital Marketing</a></li>
+                            <li><a href="#services">SEO Optimization</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="tel:+918838399688">+91 8838399688</a></li>
+                            <li><a href="tel:+917397687407">+91 7397687407</a></li>
+                            <li><a href="mailto:contact@gaxatech.com">contact@gaxatech.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Gaxa Tech. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link magnetic" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-link magnetic" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link magnetic" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link magnetic" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top magnetic" id="scrollTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+        <svg class="progress-ring" width="60" height="60">
+            <circle class="progress-ring-circle" stroke="currentColor" stroke-width="2" fill="transparent" r="28" cx="30" cy="30"/>
+        </svg>
+    </button>
+
+    <!-- GSAP Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
+
